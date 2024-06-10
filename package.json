@@ -1,0 +1,15 @@
+{
+  "name": "ominroweb",
+  "version": "1.0.0",
+  "main": "tabs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "overlayscrollbars": "^2.8.3"
+  }
+}
