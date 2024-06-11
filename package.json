@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "tabs.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "overlayscrollbars": "^2.8.3"
+  "devDependencies": {
+    "parcel": "^2.12.0"
   }
 }

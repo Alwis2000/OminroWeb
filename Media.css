@@ -1,0 +1,64 @@
+@media screen and (max-width: 650px) {
+  html {
+    scroll-padding: 20svh;
+  }
+  body {
+    /* padding-top: 12.5svh; */
+  }
+
+  #Home {
+    /* border-radius: 100px; */
+    height: 50svh;
+    background-size: cover;
+    background-position: 80% 0%;
+  }
+
+  #products {
+    grid-template-columns: repeat(1, 2fr);
+    grid-auto-rows: 150px;
+  }
+
+  #suppliers {
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: 100px;
+  }
+  #suppliers .panelcontainer:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  #pharPic img {
+    transform: translate(0, 0);
+  }
+
+  .text {
+    position: relative;
+    font-size: 1rem;
+    width: 80%;
+  }
+  .ribbon {
+    /* position: absolute; */
+    flex-direction: column;
+    height: fit-content;
+    padding: 0;
+    width: 100vw;
+    padding-top: 1em;
+  }
+  #BottomWrap {
+    /* display: none; */
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .infoclass {
+    width: 80%;
+  }
+  #contact {
+    width: 80vw;
+  }
+  #tabs button {
+    font-size: 1rem;
+    padding: 10px 5px;
+  }
+  .pagelinks:nth-child(5) {
+    display: none;
+  }
+}
