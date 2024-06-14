@@ -77,6 +77,7 @@ body {
   align-items: center;
   /* display: none; */
   padding-inline: 2em;
+  position: relative;
 }
 
 #ominroText {
@@ -100,6 +101,9 @@ body {
   align-items: center;
   justify-content: space-between;
   /* padding-right: 2em; */
+  /* position: fixed; */
+  top: 0;
+  left: 0;
 }
 
 #tabs button {
@@ -149,7 +153,7 @@ body {
   background-color: #ffffff;
   outline: 2px var(--ominroMaroonTrans) solid;
   margin-block: 4vw;
-  border-radius: 20px;
+  border-radius: 1vw;
   overflow: hidden;
 }
 
@@ -172,7 +176,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 70vh;
-  border-radius: 10px;
+  border-radius: 1vw;
   outline: solid 2px var(--ominroMaroonTrans);
   background-image: url(images/MetalOminro.png),
     url(images/Landingbackgroundbr.png);
@@ -190,7 +194,7 @@ body {
   top: 10%;
   padding: 30px;
   /* background-color: white; */
-  border-radius: 10px;
+  border-radius: 2vw;
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
   /* height:50% */
 }
@@ -213,7 +217,7 @@ body {
   margin-inline: 0;
   font-size: 1.2rem;
   translate: 0 -0.2em;
-  text-decoration: underline 2px;
+  text-decoration: underline 0.2em;
   text-underline-offset: 0.3em;
 }
 
