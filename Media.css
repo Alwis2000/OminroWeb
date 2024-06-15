@@ -2,9 +2,6 @@
   html {
     scroll-padding: 20svh;
   }
-  body {
-    /* padding-top: 12.5svh; */
-  }
 
   #Home {
     /* border-radius: 100px; */
@@ -34,6 +31,7 @@
     position: relative;
     font-size: 1rem;
     width: 80%;
+    padding: 0;
   }
   .ribbon {
     /* position: absolute; */
@@ -41,24 +39,29 @@
     height: fit-content;
     padding: 0;
     width: 100vw;
-    padding-top: 1em;
+    border-radius: 0 0 5vw 5vw;
+    /* padding-top: 1em; */
     /* display: none; */
   }
+
+  #ominroText {
+    font-size: 2rem;
+  }
+
   #BottomWrap {
     /* display: none; */
     flex-direction: column-reverse;
     align-items: center;
   }
-  .infoclass {
-    width: 80%;
-  }
-  #contact {
-    width: 80vw;
-  }
   #tabs button {
     font-size: 1rem;
-    padding: 10px 5px;
+    padding: 5px 10px;
+    display: none;
   }
+  .pagelinks:nth-child(3) {
+    display: none;
+  }
+
   .pagelinks:nth-child(5) {
     display: none;
   }
@@ -70,5 +73,57 @@
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     margin: -2px;
+  }
+
+  .infoclass {
+    width: 80%;
+  }
+  .infoclass p {
+    margin-top: 0;
+  }
+
+  #BottomWrap {
+    padding-bottom: 0;
+  }
+
+  .contactInputs {
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+  }
+
+  #contact button {
+    width: fit-content;
+    padding-inline: 30px;
+  }
+  #contact {
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media (width < 400px) {
+  #tabs button {
+    font-size: 0.8rem;
+    padding: 5px 5px;
+  }
+
+  .text {
+    font-size: 0.8rem;
+  }
+
+  .infoclass {
+    font-size: 0.8rem;
+  }
+  .contactInputs {
+    font-size: 0.8rem;
+  }
+  #contact button {
+    font-size: 1rem;
+  }
+  .heading {
+    font-size: 1rem;
   }
 }
