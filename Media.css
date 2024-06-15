@@ -74,6 +74,9 @@
     height: calc(100% + 4px);
     margin: -2px;
   }
+  #info {
+    width: 80%;
+  }
 
   .infoclass {
     width: 80%;
@@ -83,6 +86,7 @@
   }
 
   #BottomWrap {
+    padding: 0.5em;
     padding-bottom: 0;
   }
 
@@ -95,12 +99,16 @@
   #contact button {
     width: fit-content;
     padding-inline: 30px;
+    margin-bottom: 0.5em;
   }
   #contact {
     display: flex;
     width: 80vw;
     align-items: center;
     margin: 0;
+  }
+  #contactTitle {
+    font-size: 1.3rem;
   }
 }
 
