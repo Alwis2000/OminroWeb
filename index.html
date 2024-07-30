@@ -1,4 +1,6 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
   <head>
     <title>Ominro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,20 +24,41 @@
           class="pagelinks"
           onclick="openPage(event, 'mainPage')"
           id="defaultOpen">
-          <a href="#HomePage" onclick="lenis.scrollTo('#HomePage')">HOME</a>
+          <a
+            href="#HomePage"
+            onclick="lenis.scrollTo('#HomePage', { offset: -200})"
+            >HOME</a
+          >
         </button>
         <button class="pagelinks" onclick="openPage(event, 'mainPage')">
-          <a href="#Product" onclick="lenis.scrollTo('#Product')">PRODUCTS</a>
+          <a
+            href="#Product"
+            onclick="lenis.scrollTo('#Product', { offset: -200})"
+            >PRODUCTS</a
+          >
         </button>
         <button class="pagelinks" onclick="openPage(event, 'mainPage')">
-          <a href="#Supply" onclick="lenis.scrollTo('#Supply')">SUPPLIERS</a>
+          <a href="#Supply" onclick="lenis.scrollTo('#Supply', { offset: -200})"
+            >SUPPLIERS</a
+          >
         </button>
         <button class="pagelinks" onclick="openPage(event, 'Pharmaceuticals')">
           <a
             href="#Pharmaceuticals"
-            onclick="lenis.scrollTo('#Pharmaceuticals')"
+            onclick="lenis.scrollTo('#Pharmaceuticals', { offset: -200})"
             >pharmaceuticals</a
           >
+          <div class="dropdown-content">
+            <a
+              href="#Pharmaceuticals"
+              onclick="lenis.scrollTo('#Pharmaceuticals', { offset: -200})"
+              >Nutraceuticals</a
+            >
+            <a href="#">Link 2</a>
+          </div>
+        </button>
+        <button class="pagelinks" onclick="openPage(event, 'CSR')">
+          <a href="#CSR" onclick="lenis.scrollTo('#CSR')">CSR</a>
         </button>
         <button class="pagelinks">
           <a
@@ -49,25 +72,15 @@
 
     <div class="contentWrap" id="HomePage">
       <div id="mainPage" class="pagecontent">
-        <div id="Home" class="tabcontent">
+        <section id="Home" class="tabcontent">
           <!-- <img id="parallax" src="images/background.png" alt=""> -->
           <div class="text">
-            <h1>About Us</h1>
-            <p>
-              Our company's start originates from 2006 when Ominro Medicals was
-              incorporated as a partnership. In 2008, Ominro Medicals (Private)
-              Limited was founded as a private limited liability company in the
-              Democratic Socialist Republic of Sri Lanka.
-            </p>
-            <p2
-              >Our objective is to continue to tap into the ever growing Health
-              Care and Food Industry markets with the intention of expanding
-              their potential product portfolio.</p2
-            >
+            <span>Wise</span>
+            <p><span>for</span> Diseases</p>
           </div>
-        </div>
+        </section>
 
-        <div id="Product" class="tabcontent">
+        <section id="Product" class="tabcontent">
           <div class="heading">
             <h1>Our Products</h1>
           </div>
@@ -101,9 +114,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div id="Supply" class="tabcontent">
+        <section id="Supply" class="tabcontent">
           <div class="heading">
             <h1>Our Suppliers</h1>
           </div>
@@ -144,40 +157,144 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="tabcontent">
+          <div>
+            <div class="heading">
+              <h1>About Us</h1>
+            </div>
+
+            <div class="aboutUs">
+              Ominro Medicals Pvt Ltd was established and registered in the
+              Democratic Republic of Sri Lanka in 2008. Our core philosophy
+              revolves around tapping into the ever-expanding Medical, Health
+              Care, and Non-Medical industries. We aim to expand our product and
+              service offerings by providing valuable information to our current
+              and prospective principals, helping them diversify their product
+              portfolios.
+
+              <p>
+                As we navigate an external environment that is changing at an
+                unprecedented rate, we anticipate more transformation in the
+                next three years than we have seen in the past. In 2011, we
+                diversified into manufacturing, with a focus on the
+                pharmaceutical industry. We have also become a leading importer
+                and representative for international brands in the marketing and
+                distribution of medical, healthcare, biomedical, non-medical,
+                and GMP industrial products in Sri Lanka.
+              </p>
+
+              Our extensive product portfolio includes:
+              <li>In-vitro diagnostics reagents test kits.</li>
+              <li>Biomedical equipment.</li>
+              <li>Accessories and consumables.</li>
+              <li>Disposables (including surgical).</li>
+              <li>Glassware and plasticware products.</li>
+              <li>GMP industrial disposables.</li>
+              <p>
+                Reflecting on our progress and success, we are proud to have
+                achieved the objectives and goals set by our principal suppliers
+                and ourselves. This has established Ominro Medicals as a key
+                player in the medical, healthcare, and non-medical industries in
+                both the public and private sectors.
+              </p>
+
+              <p>
+                Over the years, we have built strong relationships with leading
+                government and private healthcare corporations, industrial
+                manufacturers, and food processing organizations in Sri Lanka.
+                We are dedicated to selecting and supplying products of the
+                highest accepted standards. Our skilled professionals enable us
+                to identify the needs of the medical profession and consumers,
+                ensuring we upgrade technologies to improve product development
+                in response to the environment.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
 
       <div id="Pharmaceuticals" class="pagecontent">
-        <div class="Wrapper" id="pharWrap">
+        <section id="pharWrap">
           <div id="pharPic">
-            <img src="images/610068caf3784968bef67bd051b98059.webp" alt="" />
+            <img src="images/Screenshot 2024-07-15 214254.png" alt="" />
+            <div class="textOverlay" id="directorDetails">
+              Laxhman De Silva,
+              <p>Director</p>
+            </div>
           </div>
           <div id="pharIntro">
             <h2>Our Pharmaceuticals</h2>
-            Recognizing PHARMACEUTICALS as a great potential to effectively
-            treat the patients with branded and high-quality branded generics.
-            We consistently work to ensure that patients in Sri Lanka have their
-            medication at a stress-free price and access to have their
-            prescriptions with respect and dignity. We will never compromise
-            quality with price as we understand that a “Healthy Nation is
-            Wealthy Society”. We believe we can make a difference only by
-            thinking beyond the obvious. Prior to every action we take, we
-            always consider new paths, so we can bring true value to the
-            healthcare community, to patients and their families.
-
             <p>
-              We always aim high and demand the best from ourselves and our
-              partners. Success does not make us complacent. For everything we
-              do, we always question ourselves whether there is a better way to
-              do it; and if there is, we follow it.
+              Our organization was established by our Director / CEO in the year
+              2006. We both have a strong personal relationship for more than
+              three decades. Preliminary discussions of having a new member
+              "Pharmaceuticals" division to the Ominro Medicals (Pvt) Ltd.
+              family was proposed in the year 2016. Both of us and his wife
+              (Arosha) were exchanging our views and ideas. We decided to turn
+              our vision into reality and proceeded to lay the foundation to
+              build the Pharmaceuticals division.
             </p>
 
             <p>
-              We welcome the Global Pharmaceuticals / Nutraceuticals and
-              Veterinary Organizations to explore with us in Sri Lanka “The
-              Pearl of the Indian Ocean”
+              We are proud to say that we made it happen and take the
+              opportunity to warmly welcome the Global Pharmaceuticals /
+              Nutraceuticals and Veterinary Manufacturers and Exporting Business
+              Organizations to join hands with us to include the "Pearl of the
+              Indian Ocean" SRI LANKA on your Exports Map.
+            </p>
+            <p>
+              I started my career as a Medical Representative in 1979 with Bayer
+              (Germany) Schering AG (Germany) and Boots (England). I held many
+              Senior Manager positions within the consumer industry and worked
+              as the Country Manager for SEARLE PAKISTAN LTD (Subsidiary of G.D
+              Searle USA) Sri Lanka & Maldives for 13+ years. I immigrated to
+              Canada in 2007 and joined one of the top six financial
+              institutions.
+            </p>
+
+            <p>
+              Professionally I have completed my education in Business
+              Management / Marketing / Sales Management with private educational
+              institutions affiliated to the UK in Sri Lanka. I am a Member of
+              Toastmasters in Canada and held positions as Vice President -
+              Public Relations and Vice President Membership.
+            </p>
+            <p>
+              I have well over three decades of success and professional
+              expertise with the Private Sector Organizations; State
+              Pharmaceuticals Corporation / Medical Profession - Pediatrics
+              /Cardiologists/ Psychiatrists/General Physicians/Family Private
+              Physicians/ Local Health Authorities and the Semi- Government
+              Institutions. We have our resources to establish your Organization
+              and Products in Sri Lanka.
+            </p>
+
+            <p>
+              We can guide you with the steps in registration on all three
+              product portfolios with the respective regulatory authorities in
+              Sri Lanka. Currently we are in negotiations with some
+              organizations in different countries and already in the process of
+              preparing their registration dossiers for Sri Lanka.
+            </p>
+
+            <p>
+              As the Director Pharmaceuticals, You can keep faith in our
+              organization and our distribution partners. We are a team of
+              dedicated and committed professionals to offer our expertise and
+              services with passion to build a strong business relationship with
+              your organization.
             </p>
           </div>
+        </section>
+      </div>
+
+      <div id="CSR" class="pagecontent">
+        <div class="tabcontent">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+          eligendi nisi tempore facere animi totam fugiat tempora commodi modi
+          facilis, dicta perferendis! Dicta quasi adipisci ducimus suscipit
+          numquam sint in?
         </div>
       </div>
     </div>
@@ -244,16 +361,16 @@
 
     <script>
       // Get the element with id="defaultOpen" and click on it
-      document.getElementById('defaultOpen').click()
+      document.getElementById('defaultOpen').click();
 
-      const lenis = new Lenis()
+      const lenis = new Lenis();
 
       function raf(time) {
-        lenis.raf(time)
-        requestAnimationFrame(raf)
+        lenis.raf(time);
+        requestAnimationFrame(raf);
       }
 
-      requestAnimationFrame(raf)
+      requestAnimationFrame(raf);
     </script>
   </body>
 </html>

@@ -39,15 +39,13 @@ function parallax(e) {
   let _h = window.innerHeight / 2;
   let _mouseX = e.clientX;
   let _mouseY = e.clientY;
-  let _depth1 = `${50 - (_mouseX - _w) * 0.0075}% ${
+  let _depth1 = `${50 - (_mouseX - _w) * 0.015}% ${
     50 - (_mouseY - _h) * 0.0075
   }%`;
-  let _depth2 = `${50 - (_mouseX - _w) * 0.015}% ${
-    50 - (_mouseY - _h) * 0.015
+  let _depth2 = `${50 - (_mouseX - _w) * 0.0005}% ${
+    50 - (_mouseY - _h) * 0.001
   }%`;
-  // let x = `${_depth2}, ${_depth1}`;
 
-  // document.getElementById("Home").style.backgroundPosition = x;
   document.getElementById('Home').style.setProperty('--x', `${_depth1}`);
   document.getElementById('Home').style.setProperty('--y', `${_depth2}`);
 
