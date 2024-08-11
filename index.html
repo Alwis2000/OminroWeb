@@ -4,7 +4,9 @@
   <head>
     <title>Ominro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Layout.css" />
     <link rel="stylesheet" href="Information.css" />
+    <link rel="stylesheet" href="Animations.css" />
     <link rel="stylesheet" href="Media.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400&amp;display=swap"
@@ -42,20 +44,24 @@
             >SUPPLIERS</a
           >
         </button>
-        <button class="pagelinks" onclick="openPage(event, 'Pharmaceuticals')">
-          <a
-            href="#Pharmaceuticals"
-            onclick="lenis.scrollTo('#Pharmaceuticals', { offset: -200})"
-            >pharmaceuticals</a
-          >
-          <div class="dropdown-content">
-            <a
-              href="#Pharmaceuticals"
-              onclick="lenis.scrollTo('#Pharmaceuticals', { offset: -200})"
-              >Nutraceuticals</a
-            >
-            <a href="#">Link 2</a>
-          </div>
+        <button>
+          Healthcare &#9660;
+          <ul class="dropdown-content">
+            <li class="pagelinks links">
+              <a
+                href="#Pharmaceuticals"
+                onclick="lenis.scrollTo('#Pharmaceuticals', { offset: -200}); openPage(event, 'Pharmaceuticals')">
+                Pharmaceuticals</a
+              >
+            </li>
+            <li class="pagelinks links">
+              <a
+                href="#Pharmaceuticals"
+                onclick="lenis.scrollTo('#Nutraceuticals', { offset: -200}); openPage(event, 'Pharmaceuticals')"
+                >Nutraceuticals</a
+              >
+            </li>
+          </ul>
         </button>
         <button class="pagelinks" onclick="openPage(event, 'CSR')">
           <a href="#CSR" onclick="lenis.scrollTo('#CSR')">CSR</a>
@@ -215,7 +221,7 @@
       </div>
 
       <div id="Pharmaceuticals" class="pagecontent">
-        <section id="pharWrap">
+        <section class="subWrap">
           <div id="pharPic">
             <img src="images/Screenshot 2024-07-15 214254.png" alt="" />
             <div class="textOverlay" id="directorDetails">
@@ -223,7 +229,7 @@
               <p>Director</p>
             </div>
           </div>
-          <div id="pharIntro">
+          <div class="subPara">
             <h2>Our Pharmaceuticals</h2>
             <p>
               Our organization was established by our Director / CEO in the year
@@ -284,6 +290,38 @@
               dedicated and committed professionals to offer our expertise and
               services with passion to build a strong business relationship with
               your organization.
+            </p>
+          </div>
+        </section>
+        <section class="subWrap" id="Nutraceuticals">
+          <div class="subPara">
+            <h2>Our Nutraceuticals</h2>
+            <p>
+              The Global and Sri Lankan community is in the process of a rapid
+              change over to "Live Healthy with a Wise Lifestyle" is boosting
+              the need for Nutraceuticals.
+            </p>
+            <p>
+              The worldwide nutraceutical market is anticipated to be around
+              722.49 billon between 2021 - 2026 with an annual compound rate of
+              8.3 percent. As per a research reports the market size for
+              pharmaceuticals and nutraceuticals in Sri Lanka was worth USD 642
+              million in 2018, which the experts are expecting to reach USD 787
+              million growing at the CAGR (compound annual growth rate) of 4.1
+              percent.
+            </p>
+            <p>
+              We look forward to have manufacturers / exporters with quality
+              "Nutraceuticals" products derived from food sources with extra
+              health benefits in addition to the basic nutritional value found
+              in foods. Nutraceuticals are considered to be healthy sources for
+              the prevention of life-threatening diseases such as diabetes,
+              renal and gastrointestinal disorders, as well as different
+              infections.
+            </p>
+            <p>
+              We are committed make Sri Lankan's "Live Healthy with a Wise
+              Lifestyle" with your brand of Nutraceuticals.
             </p>
           </div>
         </section>
