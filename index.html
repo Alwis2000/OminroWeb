@@ -11,7 +11,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400&amp;display=swap"
       rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@v0.2.26/bundled/lenis.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@v0.2.26/bundled/lenis.js"></script> -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="tabs.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
@@ -19,6 +20,56 @@
   </head>
 
   <body onload="parallaxFix()">
+    <div class="mobileSelection">
+      <div class="navlinks">
+        <button
+          class="pagelinks"
+          onclick="openPage(event, 'mainPage')"
+          id="defaultOpen">
+          <a
+            href="#HomePage"
+            onclick="lenis.scrollTo('#HomePage', { offset: -200})"
+            >HOME</a
+          >
+        </button>
+        <button class="pagelinks" onclick="openPage(event, 'mainPage')">
+          <a
+            href="#Product"
+            onclick="lenis.scrollTo('#Product', { offset: -200})"
+            >PRODUCTS</a
+          >
+        </button>
+        <button class="pagelinks" onclick="openPage(event, 'mainPage')">
+          <a href="#Supply" onclick="lenis.scrollTo('#Supply', { offset: -200})"
+            >SUPPLIERS</a
+          >
+        </button>
+        <button class="pagelinks" onclick="openPage(event, 'Pharmaceuticals')">
+          <a
+            href="#Pharmaceuticals"
+            onclick="lenis.scrollTo('#Pharmaceuticals', { offset: -200}); openPage(event, 'Pharmaceuticals')">
+            Pharmaceuticals</a
+          >
+        </button>
+        <button class="pagelinks" onclick="openPage(event, 'Pharmaceuticals')">
+          <a
+            href="#Pharmaceuticals"
+            onclick="lenis.scrollTo('#Nutraceuticals', { offset: -200}); "
+            >Nutraceuticals</a
+          >
+        </button>
+        <button class="pagelinks" onclick="openPage(event, 'CSR')">
+          <a href="#CSR" onclick="lenis.scrollTo('#CSR')">Community Services</a>
+        </button>
+        <button class="pagelinks">
+          <a
+            href="#contactContainer"
+            onclick="lenis.scrollTo('#contactContainer')"
+            >Contact Us</a
+          >
+        </button>
+      </div>
+    </div>
     <div class="ribbon">
       <div id="ominroText"><span>O</span>MiNRO</div>
       <div id="tabs">
@@ -64,7 +115,7 @@
           </ul>
         </button>
         <button class="pagelinks" onclick="openPage(event, 'CSR')">
-          <a href="#CSR" onclick="lenis.scrollTo('#CSR')">CSR</a>
+          <a href="#CSR" onclick="lenis.scrollTo('#CSR')">Community Services</a>
         </button>
         <button class="pagelinks">
           <a
@@ -74,6 +125,9 @@
           >
         </button>
       </div>
+      <button class="navButton">
+        <img src="images/bars-solid.svg" alt="" />
+      </button>
     </div>
 
     <div class="contentWrap" id="HomePage">
@@ -170,7 +224,7 @@
               <h1>About Us</h1>
             </div>
 
-            <div class="aboutUs">
+            <div class="aboutUs tabText">
               Ominro Medicals Pvt Ltd was established and registered in the
               Democratic Republic of Sri Lanka in 2008. Our core philosophy
               revolves around tapping into the ever-expanding Medical, Health
@@ -328,12 +382,18 @@
       </div>
 
       <div id="CSR" class="pagecontent">
-        <div class="tabcontent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-          eligendi nisi tempore facere animi totam fugiat tempora commodi modi
-          facilis, dicta perferendis! Dicta quasi adipisci ducimus suscipit
-          numquam sint in?
-        </div>
+        <section class="tabcontent">
+          <div class="heading">
+            <h2>Our Services</h2>
+          </div>
+          <div class="tabText">
+            <li>Social Work Support</li>
+            <li>Career Management & Support</li>
+            <li>Counseling Services</li>
+            <li>Medical Services</li>
+            <li>Health Education Services</li>
+          </div>
+        </section>
       </div>
     </div>
     <div id="BottomWrap">

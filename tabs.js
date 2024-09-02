@@ -49,5 +49,5 @@ function parallax(e) {
   document.getElementById('Home').style.setProperty('--x', `${_depth1}`);
   document.getElementById('Home').style.setProperty('--y', `${_depth2}`);
 
-  console.log(getComputedStyle(document.body).getPropertyValue('--x'));
+  // console.log(getComputedStyle(document.body).getPropertyValue('--x'));
 }

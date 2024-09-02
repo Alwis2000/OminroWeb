@@ -103,6 +103,13 @@ body {
   left: 0;
 }
 
+.navButton {
+  display: none;
+  height: 55%;
+  aspect-ratio: 1/1;
+  padding: 0.5em;
+}
+
 #tabs button {
   background-color: unset;
   color: white;
@@ -178,6 +185,13 @@ body {
   background-image: url(images/Bacckgroundtwobrit.png);
 }
 
+.tabText {
+  font-size: 1.1rem;
+  padding-inline: 5em;
+  padding-bottom: 3.5em;
+  text-align: justify;
+}
+
 .pagecontent {
   width: 100%;
   animation: fadeEffect 1s;
@@ -212,7 +226,8 @@ body {
   color: var(--ominroMaroonLight);
 
   position: absolute;
-  left: 3.75em;
+  /* left: 15%; */
+  translate: -0.75em 0;
 }
 .text p:after {
   content: close-quote;
@@ -224,7 +239,7 @@ body {
   font-size: 4rem;
   color: var(--headFontcolor);
   position: relative;
-  padding-left: 3.5em;
+  padding-left: 17.5%;
   font-weight: bolder;
   quotes: '\201D''\201E';
   line-height: 1em;
@@ -232,13 +247,13 @@ body {
 }
 
 .text span {
-  font-size: 10rem;
+  font-size: 2.5em;
   margin-left: -0.15em;
   height: 50px;
 }
 
 .text p span {
-  font-size: 3rem;
+  font-size: 0.75em;
 }
 
 .text p {
@@ -257,11 +272,6 @@ body {
 }
 
 .gridClass {
-  /* outline: solid 2px var(--ominroMaroonTrans); */
-  /* margin: 10px; */
-  /* width: 90vw; */
-
-  /* position: relative; */
   background-color: var(--ominroMaroonLightTrans);
   backdrop-filter: blur(5px);
   /* background-blend-mode: lighten; */
@@ -336,10 +346,6 @@ img {
 }
 
 .aboutUs {
-  font-size: 1.1rem;
-  padding-inline: 5em;
-  padding-bottom: 3.5em;
-  text-align: justify;
   text-indent: 1em;
 }
 
@@ -414,6 +420,7 @@ img {
   /* box-shadow: 0 0 50px rgba(105, 0, 74, 0.4);s */
   outline: solid 2px var(--ominroMaroonTrans);
   text-align: justify;
+  background-image: url(images/Bacckgroundtwobrit.png);
 }
 
 .subPara h2 {
