@@ -45,6 +45,15 @@ body {
   /* padding-top: 10svh; */
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image img {
+  object-fit: cover;
+}
+
 .ribbon {
   /* left: 50%; */
   top: 0;
