@@ -112,6 +112,8 @@
   }
 
   #contact button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding-inline: 30px;
     margin-bottom: 0.5em;

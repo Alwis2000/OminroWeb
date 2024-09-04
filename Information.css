@@ -51,12 +51,14 @@ body {
 }
 
 .image img {
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
 .ribbon {
   /* left: 50%; */
   top: 0;
+  position: -webkit-sticky;
   position: sticky;
   display: flex;
   background-color: var(--ominroMaroon);
@@ -73,9 +75,23 @@ body {
   margin: 1em;
   padding-inline: 2em;
   position: sticky;
+  -webkit-animation-name: ribbonBorder;
   animation-name: ribbonBorder;
   animation-timeline: scroll();
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes ribbonBorder {
+  0% {
+    border-radius: 2vh;
+  }
+  5% {
+    border-radius: 0 0 2vh 2vh;
+  }
+  100% {
+    border-radius: 0 0 2vh 2vh;
+  }
 }
 
 @keyframes ribbonBorder {
@@ -184,6 +200,7 @@ body {
 .tabcontent {
   width: 100%;
   box-sizing: border-box;
+  -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
   /* padding: 0.4em; */
   background-color: #ffffff;
@@ -203,6 +220,7 @@ body {
 
 .pagecontent {
   width: 100%;
+  -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
   padding-inline: 7.5vw;
   display: flex;
@@ -275,6 +293,7 @@ body {
   text-align: center;
   margin-block: 2em;
   font-size: 1.5rem;
+  -webkit-text-decoration: underline 0.1em;
   text-decoration: underline 0.1em;
   text-underline-offset: 0.3em;
   color: var(--headFontcolor);
@@ -282,6 +301,7 @@ body {
 
 .gridClass {
   background-color: var(--ominroMaroonLightTrans);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   /* background-blend-mode: lighten; */
   display: grid;
@@ -305,6 +325,7 @@ body {
   width: 100%;
   height: 100%;
   transition: linear 0.1s;
+  -o-object-fit: cover;
   object-fit: cover;
   /* outline:  solid 2px var(--ominroMaroonLight); */
 }
@@ -321,6 +342,7 @@ body {
 .panel {
   background-color: white;
   cursor: pointer;
+  -webkit-filter: saturate(0.5);
   filter: saturate(0.5);
   height: 100%;
   width: 100%;
@@ -328,6 +350,7 @@ body {
 }
 
 .panel:hover {
+  -webkit-filter: saturate(1);
   filter: saturate(1);
 }
 
@@ -339,6 +362,7 @@ img {
 .panel img {
   position: relative;
   z-index: 2;
+  -o-object-fit: cover;
   object-fit: cover;
   /* width: 100%;
   height: 100%; */
@@ -351,6 +375,7 @@ img {
 }
 
 #suppliers .panel img {
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -413,6 +438,7 @@ img {
 
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   /* box-shadow: 0 0 50px rgba(105, 0, 74, 0.4); */
 }
@@ -477,6 +503,8 @@ img {
 }
 
 #info {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
