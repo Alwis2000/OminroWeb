@@ -4,9 +4,8 @@
   }
 
   #Home {
-    /* border-radius: 100px; */
     height: 55vh;
-    /* background-size: cover; */
+
     background-size: 220%, 37px;
     background-position: 80% 0%;
     align-content: end;
@@ -42,8 +41,6 @@
   }
 
   .ribbon {
-    /* position: absolute; */
-    /* flex-direction: column; */
     height: 10vh;
     margin: 0;
     margin-bottom: 1em;
@@ -51,8 +48,6 @@
     padding-inline: 2em;
     width: 100vw;
     border-radius: 0 0 0 0 !important;
-    /* padding-top: 1em; */
-    /* display: none; */
   }
 
   #ominroText {
@@ -60,7 +55,6 @@
   }
 
   #BottomWrap {
-    /* display: none; */
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -136,7 +130,6 @@
   }
   .aboutUs li {
     padding: 0;
-    /* padding-left: 1em; */
     text-align: left;
   }
 
@@ -152,7 +145,7 @@
   }
 
   .text {
-    font-size: 0.8rem;
+    font-size: 2.1em;
   }
 
   .infoclass {
@@ -166,6 +159,10 @@
   }
   .heading {
     font-size: 1rem;
+  }
+
+  .aboutUs {
+    font-size: 0.85rem;
   }
 }
 
