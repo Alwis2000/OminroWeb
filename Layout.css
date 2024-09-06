@@ -1,6 +1,6 @@
 :root {
   --ominroBackground: white;
-  --ominroMaroon: #a01661;
+  --ominroMaroon: var(--accentColor);
   --ominroBlue: #5656ff;
   --ominroRed: red;
   --ominroMaroonLight: #dd7aa3;
@@ -17,8 +17,8 @@
   box-sizing: border-box;
 }
 /*
-      2. Remove default margin
-    */
+  2. Remove default margin
+*/
 * {
   margin: 0;
 }

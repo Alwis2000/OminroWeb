@@ -14,10 +14,15 @@
       rel="stylesheet" />
     <!-- <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@v0.2.26/bundled/lenis.js"></script> -->
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-    <script src="tabs.js"></script>
+    <script src="pages.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+    <style>
+      :root {
+        --accentColor: #a01661;
+      }
+    </style>
   </head>
 
   <body onload="parallaxFix()">
@@ -126,7 +131,7 @@
           >
         </button>
       </div>
-      <button class="navButton">
+      <button class="navButton" onclick="RevealContext()">
         <img src="images/bars-solid.svg" alt="" />
       </button>
     </div>
@@ -463,7 +468,7 @@
       >
     </div>
 
-    <script>
+    <script defer>
       // Get the element with id="defaultOpen" and click on it
       document.getElementById('defaultOpen').click();
 
@@ -476,5 +481,6 @@
 
       requestAnimationFrame(raf);
     </script>
+    <script src="tabs.js"></script>
   </body>
 </html>
